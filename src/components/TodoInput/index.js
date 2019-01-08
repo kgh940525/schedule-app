@@ -1,1 +1,1 @@
-export {defalut} from './Todoinput'
+export {default} from './Todoinput'
