@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './TodoInput.scss';
-import { EPROTO } from 'constants';
+
 
 const TodoInput = ({value,onChange, onInsert}) =>{
 
