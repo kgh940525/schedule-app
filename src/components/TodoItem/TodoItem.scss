@@ -7,13 +7,14 @@
     cursor :pointer;
     .tick{
         margin-right: 1rem;
-
     }
     .text{
-        flex:1;
+        flex: 1;
         word-break: break-all;
-        &.done{
-            text-decoration: line-through;
+        &.done {
+            
+            text-decoration:line-through;
+            color: aqua;
         }
     }
     .delete{
@@ -22,7 +23,7 @@
         font-size: 0.8rem;
         &:hover{
             color: $oc-red-5;
-            text-decoration: underline;
+            text-decoration: line-through;
         }
     }
     &:nth-child(odd){
