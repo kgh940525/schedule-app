@@ -6,6 +6,7 @@ import PageTemplate from './PageTemplate/PageTemplate';
 // );
 import TodoInputContainer from '../containers/TodoInputContainer';
 import TodoListContainer from '../containers/TodoListContainer';
+import TodoProgressContainer from '../containers/TodoProgressContainer';
 
 
 class App extends Component {
@@ -13,6 +14,7 @@ class App extends Component {
   render(){
     return(
       <PageTemplate>
+        <TodoProgressContainer/>
         <TodoInputContainer/>
         <TodoListContainer/>
       </PageTemplate>

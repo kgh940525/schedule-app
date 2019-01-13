@@ -4,6 +4,9 @@ import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 
 import * as todosActions from '../modules/todos'
+import TodoProgress from '../components/TodoProgress/TodoProgress';
+
+// import TodoProgressContainer from './TodoProgressContainer';
 
 class TodoListContainer extends Component {
     handleToggle = (id) =>{
@@ -20,11 +23,15 @@ class TodoListContainer extends Component {
         const {handleToggle, handleRemove} = this;
 
         return (
+            <div>
             <TodoList
             todos={todos}
             onToggle={handleToggle}
             onRemove={handleRemove}
             />
+            
+            <TodoProgress onToggle={handleToggle}></TodoProgress>
+            </div>
         );
     }
 }

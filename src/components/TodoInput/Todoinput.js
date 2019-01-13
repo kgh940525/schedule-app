@@ -12,7 +12,6 @@ const TodoInput = ({value,onChange, onInsert}) =>{
     return (
       <div className="todo-input">
       <input onChange={onChange} value={value} onKeyPress={handleKeyPress}/>
-      
       <div className="add-button" onClick={onInsert}>추가하기</div>
       
       </div>
